@@ -36,7 +36,7 @@ module.exports = function (grunt) {
       options: {
         reporter: 'nyan',
         require: [
-          function(){ should = require('chai').should() }
+          function(){ should = require('chai').should(); }
         ]
       },
       all: {
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['jshint', 'mochaTest']);
+  grunt.registerTask('default', ['mochaTest']);
   grunt.registerTask('test', [
     'mochaTest'
   ]);
